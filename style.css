@@ -9,7 +9,6 @@ body {
 
 
     height: 100vh;
-    border: 1px solid red;
 }
 
 header {
@@ -38,7 +37,7 @@ button span {
     color: #8B5CF6;
 }
 
-.checkHabit{
+input{
     appearance: none;
     -webkit-appearance: none;
 
@@ -50,33 +49,49 @@ button span {
     border-radius: 8px; 
 }
 
-.checkHabit:checked {
+input:checked {
     background: #8B5CF6;
 }
 
-.column {
+.day {
     display: flex;
     flex-direction: column;
-    margin-right: 32px;
-    gap: 24px;
+    gap: 24px
+}
+
+.days {
+    display: flex;
+    margin-left: 32px;
+    gap: 48px;
 }
 
 .habits {
+    margin-top: 65px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.day div {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 125%;
+    color: #A1A1AA;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 form {
     display: flex;
     padding: 0px 42px;
-
 }
 
 .habit {
-    width: 40px;
-    height: 64px;
-    display: flex;
-    text-align: center;
-    align-items: center;
+   width: 64px;
+   height: 64px;
+   font-size: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
